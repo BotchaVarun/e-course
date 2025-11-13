@@ -1,23 +1,22 @@
-import React, { useState, useEffect } from "react";
+import  { useState} from "react";
 //
 import axios from "axios";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+
 import ShowStudent from "./ShowStudent";
-import Jumbotron  from "react-bootstrap/Jumbotron";
-import Spinner from "react-bootstrap/Spinner";
+
 import AddCourse from "./AddCourse";
 import CoursesOfStudent from "./CoursesOfStudent";
 import { Button, ButtonGroup } from "react-bootstrap";
-import { withRouter } from 'react-router-dom';
+
 
 //
 function View(props) {
   const { screen, setScreen } = props;
-  const {student,setStudent} = props;
-  const [data, setData] = useState();  
+
+
+
   const [course, setCourse] = useState("");
-    
+
   const deleteCookie = async () => {
     try {
       await axios.get("/signout");
@@ -26,15 +25,15 @@ function View(props) {
       console.log(e);
     }
   };
-  const verifyCookie = async () => {
-    try {
-      const res = await axios.get("/welcome");
-      console.log(res.data);
-      setData(res.data);
-    } catch (e) {
-      console.log(e);
-    }
-  };
+  // const verifyCookie = async () => {
+  //   try {
+  //     const res = await axios.get("/welcome");
+  //     console.log(res.data);
+  //     setData(res.data);
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // };
 
   const listCourses = (id) => {
     setCourse("n");

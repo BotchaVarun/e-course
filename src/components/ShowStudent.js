@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import Spinner from "react-bootstrap/Spinner";
-import Jumbotron from "react-bootstrap/Jumbotron";
+
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { withRouter } from "react-router-dom";

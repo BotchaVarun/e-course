@@ -4,7 +4,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { withRouter } from 'react-router-dom';
-import React, { useState,useEffect } from 'react';
+import  { useState,useEffect } from 'react';
 
 //
 function UpdateCourse(props) {

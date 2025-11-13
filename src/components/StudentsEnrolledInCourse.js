@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import axios from "axios";
 import ListGroup from "react-bootstrap/ListGroup";
 import Spinner from "react-bootstrap/Spinner";
-import Jumbotron from "react-bootstrap/Jumbotron";
-import Button from "react-bootstrap/Button";
+
 import { withRouter } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Login from "./Login";
@@ -12,6 +11,7 @@ function List(props) {
   const [data, setData] = useState([]);
   const [showLoading, setShowLoading] = useState(true);
   const [listError, setListError] = useState(false);
+  console.log(listError);
   const apiUrl =
     "http://localhost:3000/StudentsEnrolledInCourse/" +
     props.match.params.courseCode;
