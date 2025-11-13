@@ -68,7 +68,7 @@ function App(props) {
   //
   return (
     <div className="App container">
-      {screen === 'auth' 
+      {screen == 'auth' 
         ? <div className="col-md-8 offset-md-2 LoginWrapper">
           <Form.Group>
             <Form.Label>Student Number: </Form.Label>

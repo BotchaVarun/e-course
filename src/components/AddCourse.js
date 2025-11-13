@@ -67,7 +67,7 @@ function AddCourse(props) {
       const onCourseChange=()=>{
         var cc = document.getElementById('courseCode');
         courseCode_List.forEach(element=>{
-          if(cc.value===element.value){
+          if(cc.value==element.value){
             setCourse(course.courseName = element.name)
           }
         });

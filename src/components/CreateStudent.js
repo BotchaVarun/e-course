@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import Spinner from 'react-bootstrap/Spinner';
 import Jumbotron from 'react-bootstrap/Jumbotron';
@@ -16,7 +16,7 @@ function CreateUser(props) {
     setShowLoading(true);
     e.preventDefault();
     const data = { firstName: student.firstName, lastName: student.lastName, 
-      email: student.email,studentNumber: student.studentNumber,phone: student.phone, password: student.password, address: student.address, city: student.city, phone: student.phone, program: student.program};
+      email: student.email,studentNumber: student.studentNumber,phone: student.phone, password: student.password, address: student.address, city: student.city, program: student.program};
     axios.post(apiUrl, data)
       .then((result) => {
         setShowLoading(false);

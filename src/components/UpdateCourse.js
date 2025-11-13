@@ -25,6 +25,7 @@ function UpdateCourse(props) {
 
 
   ];
+  console.log(studentId);
     //
     const apiUrl = "http://localhost:3000/courses/"+ id;
   
@@ -72,7 +73,7 @@ function UpdateCourse(props) {
       const onCourseChange=()=>{
         var cc = document.getElementById('courseCode');
         courseCode_List.forEach(element=>{
-          if(cc.value===element.value){
+          if(cc.value==element.value){
             setCourse(course.courseName = element.name)
           }
         });

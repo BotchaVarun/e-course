@@ -52,11 +52,11 @@ function View(props) {
     
     <div className="App">
 
-      {course === "y" ? (
+      {course == "y" ? (
         <AddCourse screen={screen} setScreen={setScreen} />
-      ) : course === "n" ? (
+      ) : course == "n" ? (
         <CoursesOfStudent screen={screen} setScreen={setScreen} />
-      ) :course==="myProfile" ?(
+      ) :course=="myProfile" ?(
         <ShowStudent screen={screen} setScreen={setScreen}/>
       ):(
         
